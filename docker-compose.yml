@@ -1,0 +1,13 @@
+version: "3"
+services:
+  dev-server:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    image: klwxsrx/clion-dev-server
+    security_opt:
+      - seccomp:unconfined
+    container_name: clion-dev-server
+    ports:
+      - "7001:22"
+    hostname: clion-dev-server
