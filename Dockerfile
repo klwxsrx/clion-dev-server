@@ -22,11 +22,12 @@ EXPOSE 22
 
 RUN apt install -y libgtest-dev
 
-RUN cd /usr/src/gtest && \
+RUN cd /usr/src/googletest/googlemock && \
     cmake CMakeLists.txt && \
     make -f Makefile
 
-RUN mv /usr/src/gtest/*.a /usr/lib/
+RUN mv /usr/src/googletest/googlemock/*.a /usr/lib/ && \
+	mv /usr/src/googletest/googlemock/gtest/*.a /usr/lib/
 
 
 ### Delete cache ###
