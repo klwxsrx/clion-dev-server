@@ -9,5 +9,5 @@ services:
       - seccomp:unconfined
     container_name: clion-dev-server
     ports:
-      - "7001:22"
+      - "7776:22"
     hostname: clion-dev-server
