@@ -27,7 +27,7 @@ RUN cd /usr/src/googletest/googlemock && \
     make -f Makefile
 
 RUN mv /usr/src/googletest/googlemock/*.a /usr/lib/ && \
-	mv /usr/src/googletest/googlemock/gtest/*.a /usr/lib/
+    mv /usr/src/googletest/googlemock/gtest/*.a /usr/lib/
 
 
 ### Delete cache ###
